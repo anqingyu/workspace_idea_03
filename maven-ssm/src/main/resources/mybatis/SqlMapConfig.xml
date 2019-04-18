@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--<typeAliases>
+        &lt;!&ndash; 单个定义别名 &ndash;&gt;
+        <typeAlias type="com.xf.maven_ssm.dao.pojo.Items" alias="items"/>
+        &lt;!&ndash; 批量定义别名
+            指定包名，MyBatis会自动扫描包内类，自动定义别名，别名就是类名，首字母不区分大小写
+         &ndash;&gt;
+        <package name="com.xf.maven_ssm.dao.pojo"/>
+    </typeAliases>-->
+
+</configuration>

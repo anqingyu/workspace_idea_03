@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>maven-parent</artifactId>
+        <groupId>com.xf</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ssm-web</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.xf</groupId>
+            <artifactId>ssm-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- web层项目下的插件====开始 -->
+            <plugin>
+                <!-- The WAR Plugin is responsible for collecting all artifact dependencies, classes and resources of the web application and packaging them into a web application archive.
+                   作用：打包一个web应用：参考官方文档：http://maven.apache.org/plugins/maven-war-plugin/index.html
+                -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <addMavenDescriptor>false</addMavenDescriptor>
+                    </archive>
+                    <webResources>
+                        <resource>
+                            <directory>src/main/resources</directory>
+                            <targetPath>WEB-INF/classes</targetPath>
+                            <filtering>true</filtering>
+                        </resource>
+                        <resource>
+                            <directory>../ssm-servic/src/main/resources/</directory>
+                            <filtering>true</filtering>
+                        </resource>
+                        <resource>
+                            <directory>../ssm-dao/src/main/resources/</directory>
+                            <filtering>true</filtering>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <!-- The Resources Plugin handles the copying of project resources to the output directory:
+                        这个插件的作用就是把资源复制到指定的目录：参考官网说明;https://maven.apache.org/plugins/maven-resources-plugin/
+                -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <!-- copies resources to an output directory.This goal requires that you configure the resources to be copied, and specify the outputDirectory.
+                                若goal元素的值为copy-resources：把资源复制到指定的目录
+                             -->
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <!-- project.build.outputDirectory：表示默认的项目资源输出目录即编译后的target/classes文件夹-->
+                            <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                            <!-- 要复制的资源定义 -->
+                            <resources>
+                                <resource>
+                                    <directory>src/main/resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                                <resource>
+                                    <directory>../ssm-servic/src/main/resources/</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                                <resource>
+                                    <directory>../ssm-dao/src/main/resources/</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- web层项目下的插件====结束 -->
+        </plugins>
+
+        <finalName>ssm-web</finalName>
+    </build>
+
+</project>

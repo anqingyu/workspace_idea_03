@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+			    http://www.springframework.org/schema/beans/spring-beans.xsd
+			    http://www.springframework.org/schema/context
+			    http://www.springframework.org/schema/context/spring-context.xsd
+			    http://www.springframework.org/schema/aop
+			    http://www.springframework.org/schema/aop/spring-aop.xsd
+			    http://www.springframework.org/schema/tx
+			    http://www.springframework.org/schema/tx/spring-tx.xsd
+			    http://www.springframework.org/schema/mvc
+			    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--dao层配置开始-->
+
+    <!-- 加载配置文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <!--配置一个数据源-->
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///j2ee_advanced"/>
+        <property name="user" value="root"/>
+        <property name="password" value="123"/>
+    </bean>-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+
+        <property name="maxActive" value="20" />
+        <property name="initialSize" value="1" />
+        <property name="maxWait" value="60000" />
+        <property name="minIdle" value="1" />
+
+        <!--有两个含义：
+        1) Destroy线程会检测连接的间隔时间，如果连接空闲时间大于等于minEvictableIdleTimeMillis则关闭物理连接 2) testWhileIdle的判断依据，详细看testWhileIdle属性的说明-->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <!-- 连接保持空闲而不被驱逐的最长时间 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+        <!--  建议配置为true，不影响性能，并且保证安全性。申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。 -->
+        <property name="testWhileIdle" value="true" />
+        <!-- 申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能。 -->
+        <property name="testOnBorrow" value="false" />
+        <!-- 归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能 -->
+        <property name="testOnReturn" value="false" />
+
+        <!-- 配置慢查询时间;开启数据库密码解密 -->
+        <property name="connectionProperties"
+                  value="druid.stat.slowSqlMillis=5000;config.decrypt=true;config.decrypt.key="/>
+
+        <!-- 开启Druid的监控统计功能 -->
+        <property name="filters" value="stat" />
+
+        <!--开启psCache缓存，oracle请设置为true，非oracle请设置为false:
+                mysql开启会降低性能，并有可能抛out of memory异常；oracle开启则可以提升性能
+        <property name="poolPreparedStatements" value="true" />
+        最大缓存数，非oracle请设置为0
+        <property name="maxOpenPreparedStatements" value="20" />-->
+    </bean>
+
+
+    <!--创建一个生产SqlSeesion对象的工厂对象-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--引入数据源-->
+        <property name="dataSource" ref="dataSource"/>
+
+        <!-- 当mybatis的xml文件和mapper接口不在相同包下时，需要用mapperLocations属性指定xml文件的路径。
+                *是个通配符，代表所有的文件，**代表所有目录下 -->
+        <property name="mapperLocations" value="classpath:com/xf/maven_ssm/dao/mapper/*.xml" />
+
+        <!--也可以引入mybatis配置文件
+            <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml"></property> -->
+    </bean>
+
+    <!--我们对所有dao接口包下的接口进行扫描，使用SqlSeesion对象给其创建代理对象，并且放入到容器中-->
+    <!--使用(MapperScannerConfigurer)创建的所有映射器实现都会被自动注入sqlSessionFactory实例 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 配置了多个sqlSessionFactory时，需要指定所依赖的sqlSessionFactory实例;单个可以不用指定 -->
+        <!--<property name="sqlSessionFactoryBeanName"  value="sqlSessionFactory"/>-->
+
+        <property name="basePackage" value="com.xf.maven_ssm.annotation_dao,com.xf.maven_ssm.dao.mapper"/>
+    </bean>
+
+    <!--dao层配置结束-->
+
+
+    <!--service层配置开始-->
+
+    <!--组建扫描-->
+    <context:component-scan base-package="com.xf.maven_ssm.service"/>
+
+    <!-- 基于注解的声明式事务配置  start -->
+        <!--配置事务管理器
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            注入连接池
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+
+        开启事务注解的支持
+        <tx:annotation-driven />-->
+    <!-- 基于注解的声明式事务配置  end -->
+    <!-- 基于.xml文件的声明式事务配置 start-->
+        <!--配置事务管理器-->
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <!-- 注入连接池 -->
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+
+        <!-- 通知 -->
+        <tx:advice id="advice" transaction-manager="transactionManager">
+            <tx:attributes>
+                <!-- 传播行为 -->
+                <tx:method name="save*" propagation="REQUIRED"/>
+                <tx:method name="insert*" propagation="REQUIRED"/>
+                <tx:method name="add*" propagation="REQUIRED"/>
+                <tx:method name="create*" propagation="REQUIRED"/>
+                <tx:method name="delete*" propagation="REQUIRED"/>
+                <tx:method name="update*" propagation="REQUIRED"/>
+                <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+                <tx:method name="select*" propagation="SUPPORTS" read-only="true"/>
+                <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
+                <tx:method name="List*" propagation="SUPPORTS" read-only="true"/>
+            </tx:attributes>
+        </tx:advice>
+
+        <!-- 切面 -->
+        <aop:config>
+            <aop:pointcut id="testService" expression="execution (* com.xf.maven_ssm.service.*.*(..))"/>
+            <aop:advisor advice-ref="advice" pointcut-ref="testService"/>
+        </aop:config>
+    <!-- 基于.xml文件的声明式事务配置 end-->
+
+    <!-- 开启aop注解方式：此时可以通过注解面向切面编程 -->
+    <aop:aspectj-autoproxy/>
+
+    <!--service层配置结束-->
+
+    <!-- Spring线程池 -->
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!-- 核心线程数 -->
+        <property name="corePoolSize" value="500" />
+        <!-- 最大线程数 -->
+        <property name="maxPoolSize" value="1000" />
+        <!-- 队列最大长度 >=mainExecutor.maxSize -->
+        <property name="queueCapacity" value="250" />
+        <!-- 线程池维护线程所允许的空闲时间 -->
+        <property name="keepAliveSeconds" value="3000" />
+        <!-- 线程池对拒绝任务(无线程可用)的处理策略 ThreadPoolExecutor.CallerRunsPolicy策略 ,调用者的线程会执行该任务,如果执行器已关闭,则丢弃.  -->
+        <property name="rejectedExecutionHandler">
+            <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+        </property>
+    </bean>
+
+
+
+
+
+
+
+
+</beans>
