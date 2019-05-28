@@ -1204,7 +1204,7 @@
       <workItem from="1556159264539" duration="18496000" />
       <workItem from="1558404845389" duration="5581000" />
       <workItem from="1558513128978" duration="595000" />
-      <workItem from="1559010892979" duration="473000" />
+      <workItem from="1559010892979" duration="485000" />
     </task>
     <task id="LOCAL-00001" summary="webapi接口开发">
       <created>1559011221205</created>
@@ -1213,7 +1213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559011221205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="webapi接口开发">
+      <created>1559011378743</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559011378743</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1249,7 +1256,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353532000" />
+    <option name="totallyTimeSpent" value="353544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
