@@ -1,4 +1,4 @@
-package com.xf.mavenssm.controller;
+package com.xf.maven_ssm.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

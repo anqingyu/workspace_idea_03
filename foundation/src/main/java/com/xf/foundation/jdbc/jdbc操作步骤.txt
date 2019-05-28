@@ -1,0 +1,20 @@
+JDBC编程步骤:
+
+（1）加载驱动程序：Class.forName(driverClass)
+
+    加载mysql驱动：Class.forName("com.mysql.jdbc.Driver");
+
+    加载oracle驱动：Class.forName("oracle.jdbc.driver.OracleDriver");
+
+（2）获得数据库连接
+
+    DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/imooc",user,password);
+
+    DriverManager.gerConnection(URL,user,password);
+
+（3）创建Statement对象：conn.createStatement();
+
+（4）向数据库发送SQL命令
+
+（5）处理数据库的返回结果(ResultSet类)
+（6）关闭连接
