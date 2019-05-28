@@ -1,4 +1,4 @@
-package com.xf.mavenssm.controller;
+package com.xf.maven_ssm.controller;
 
 import com.xf.maven_ssm.domain.Items;
 import com.xf.maven_ssm.service.ItemsService;
