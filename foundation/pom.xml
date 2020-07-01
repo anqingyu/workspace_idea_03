@@ -28,7 +28,7 @@
     <properties>
         <slf4j.version>1.7.25</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
-        <mysql.version>5.1.28</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
     </properties>
 
     <!-- 锁定jar包版本 -->
