@@ -35,7 +35,7 @@
                         <!-- 在高版本mysql-connector-java时，会出现Cannot obtain primary key information from the database, generated objects may be incomplete
                                 那时需要
                          -->
-                        <version>5.1.28</version>
+                        <version>8.0.16</version>
                         <scope>runtime</scope>
                     </dependency>
                 </dependencies>
