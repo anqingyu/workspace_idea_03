@@ -41,7 +41,7 @@
                             <filtering>true</filtering>
                         </resource>
                         <resource>
-                            <directory>../ssm-servic/src/main/resources/</directory>
+                            <directory>../ssm-service/src/main/resources/</directory>
                             <filtering>true</filtering>
                         </resource>
                         <resource>

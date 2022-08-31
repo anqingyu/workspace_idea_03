@@ -31,6 +31,7 @@
 
     <build>
         <plugins>
+            <!-- 指定JDK编译的版本及编码方式 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -44,5 +45,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

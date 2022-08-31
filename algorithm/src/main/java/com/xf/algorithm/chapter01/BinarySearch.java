@@ -7,7 +7,7 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 /**
- * @Description: todo(描述)
+ * @Description: todo(二分搜索法:查询前需要用sort()方法将数组排序，如果数组没有排序，则结果是不确定的)
  * @Author: xiefu
  * @Date: 2018/12/13 14:07
  */
