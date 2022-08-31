@@ -27,13 +27,13 @@
   -->
     <!-- 同一管理jar包的版本 -->
     <properties>
-        <spring.version>5.1.1.RELEASE</spring.version>
+        <spring.version>5.3.14</spring.version>
         <slf4j.version>1.7.25</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
         <shiro.version>1.4.0</shiro.version>
-        <mysql.version>8.0.11</mysql.version>
-        <mybatis.version>3.4.6</mybatis.version>
-        <spring.security.version>5.1.1.RELEASE</spring.security.version>
+        <mysql.version>8.0.16</mysql.version>
+        <mybatis.version>3.5.6</mybatis.version>
+        <spring.security.version>5.3.10.RELEASE</spring.security.version>
     </properties>
 
     <!-- 锁定jar包版本 -->
@@ -213,7 +213,7 @@
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
-            <version>0.9.5.2</version>
+            <version>0.9.5.4</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
@@ -270,7 +270,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.6</version>
+            <version>2.7</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <dependency>
@@ -357,6 +357,7 @@
                         </resource>
                     </webResources>
                 </configuration>
+                <version>2.6</version>
             </plugin>
 
             <plugin>
@@ -412,7 +413,7 @@
                         <!-- 在高版本mysql-connector-java时，会出现Cannot obtain primary key information from the database, generated objects may be incomplete
                                 那时需要
                          -->
-                        <version>5.1.28</version>
+                        <version>8.0.16</version>
                         <scope>runtime</scope>
                     </dependency>
                 </dependencies>

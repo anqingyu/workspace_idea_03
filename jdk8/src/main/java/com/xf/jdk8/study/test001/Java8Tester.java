@@ -14,7 +14,7 @@ public class Java8Tester {
         List<String> names1 = new ArrayList<String>();
         names1.add("Google ");
         names1.add("Runoob ");
-        names1.add("Taobao ");
+        names1.add("Taobao ");a
         names1.add("Baidu ");
         names1.add("Sina ");
 
