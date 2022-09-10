@@ -16,11 +16,14 @@
 			    http://www.springframework.org/schema/mvc
 			    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!--组建扫描-->
+    <!-- 配置注解扫描 -->
     <context:component-scan base-package="com.xf.maven_ssm.controller"/>
 
     <!--开启springmvc注解支持-->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven>
+        <!-- 在高版本spring配置中，是需要手动开启后缀识别，才可以完成后缀（.do）的识别 -->
+        <mvc:path-matching suffix-pattern="true"></mvc:path-matching>
+    </mvc:annotation-driven>
 
     <!--视图解析器配置    start-->
         <!-- 使用jsp解析.jsp文件   start-->

@@ -107,7 +107,7 @@ public class POIExcelTest {
 
         Cell cell = row.getCell(0);
 
-        cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+        cell.setCellType(CellType.STRING);
 
         cell.setCellValue("建行运行中心：\n\t" + "现有" + refundLogs.length + "表退款交易，请配合汇付天下公司进行审核");
 
@@ -119,13 +119,13 @@ public class POIExcelTest {
 
         cell = row.createCell(0);
 
-        cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+        cell.setCellType(CellType.STRING);
 
         cell.setCellValue("商户编号：");
 
         cell = row.createCell(1);
 
-        cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+        cell.setCellType(CellType.STRING);
 
         cell.setCellValue("45433242");
 
@@ -134,7 +134,7 @@ public class POIExcelTest {
 
         cell = row.createCell(0);
 
-        cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+        cell.setCellType(CellType.STRING);
 
         cell.setCellValue("交易明细：");
 
@@ -181,7 +181,7 @@ public class POIExcelTest {
 
             cell = row.getCell(1);
 
-            cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+            cell.setCellType(CellType.STRING);
 
             cell.setCellStyle(cs3);
 
@@ -199,7 +199,7 @@ public class POIExcelTest {
 
             cell = row.getCell(3);
 
-            cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+            cell.setCellType(CellType.STRING);
 
             cell.setCellStyle(cs2);
 
