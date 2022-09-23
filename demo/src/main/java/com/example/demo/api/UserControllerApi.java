@@ -1,8 +1,11 @@
 package com.example.demo.api;
 
 import com.example.demo.domain.User;
+import com.example.demo.domain.request.UsersLoginParam;
+import com.example.demo.domain.common.ResultObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.validation.BindingResult;
 
 import java.util.List;
 
@@ -19,4 +22,7 @@ public interface UserControllerApi {
 
     @ApiOperation("分页查询用户列表")
     public List<User> findAll(Integer page, Integer size);
+
+    @ApiOperation(value = "登录以后返回token")
+    public ResultObject login(UsersLoginParam users, BindingResult result);
 }

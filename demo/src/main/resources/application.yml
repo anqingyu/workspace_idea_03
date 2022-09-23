@@ -30,6 +30,7 @@ spring:
         login-username: root
         #登录密码
         login-password: root
+        enabled: true # 1.1.18版本后，如果没有配置stat-view-servlet.enabled=true的话，将不能启动控制台
   mvc:
     path match:
       matching-strategy: ANT_PATH_MATCHER # 解决 Knife4j与Spring Boot 2.6.x 版本冲突，Springfox与Knife4j使用的路径匹配是基于AntPathMatcher的，而Spring Boot 2.6.X使用的是PathPatternMatcher

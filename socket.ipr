@@ -607,15 +607,26 @@
         <root url="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.1.14/hutool-all-4.1.14-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.alibaba:druid-spring-boot-starter:1.1.10">
+    <library name="Maven: cn.hutool:hutool-all:5.7.20">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.10/druid-spring-boot-starter-1.1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.7.20/hutool-all-5.7.20.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.10/druid-spring-boot-starter-1.1.10-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.7.20/hutool-all-5.7.20-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.10/druid-spring-boot-starter-1.1.10-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.7.20/hutool-all-5.7.20-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.alibaba:druid-spring-boot-starter:1.1.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.21/druid-spring-boot-starter-1.1.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.21/druid-spring-boot-starter-1.1.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.21/druid-spring-boot-starter-1.1.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.alibaba:druid:1.1.10">
@@ -629,15 +640,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.alibaba:fastjson:1.2.54">
+    <library name="Maven: com.alibaba:druid:1.1.21">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.21/druid-1.1.21.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.21/druid-1.1.21-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.21/druid-1.1.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.alibaba:fastjson:1.2.83">
@@ -1388,6 +1399,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: jakarta.validation:jakarta.validation-api:2.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar!/" />
@@ -2002,6 +2024,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.validator:hibernate-validator:6.2.4.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.2.4.Final/hibernate-validator-6.2.4.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.2.4.Final/hibernate-validator-6.2.4.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.2.4.Final/hibernate-validator-6.2.4.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hibernate:hibernate-core:5.6.10.Final">

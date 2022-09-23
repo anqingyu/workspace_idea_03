@@ -44,4 +44,9 @@ public class UserServiceImpl implements UserService {
     public List<User> findByNameLikeIgnoreCase(String name) {
         return userRepository.findByNameLikeIgnoreCase(name);
     }
+
+    @Override
+    public String login(String userLogin, String userPass) {
+        return null;
+    }
 }

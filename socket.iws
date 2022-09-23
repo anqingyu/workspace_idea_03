@@ -9,8 +9,28 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114e5569-5516-4489-b6ad-0b86be1a9661" name="Default" comment="spring boot demo:配置FastJsonHttpMessageConverter">
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
+    <list default="true" id="114e5569-5516-4489-b6ad-0b86be1a9661" name="Default" comment="spring boot demo:mybatis-generator生成LocalDateTime">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/BindingResultAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/Asserts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/ResultObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/request/UsersLoginParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/api/UserControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/api/UserControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/demo/mapper/ItemsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/demo/dao/ItemsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/socket.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket.iws" beforeDir="false" afterPath="$PROJECT_DIR$/socket.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -489,11 +509,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cloud-demo" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.ssh/github_id_rsa" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion.SSH" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -507,11 +527,11 @@
       <recent name="I:\my\workspace_idea_03\maven-parent\ssm-service\src\main\java\com\xf\mavenssm\service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zuiwu\IdeaProjects\workspace_idea_03\demo\src\main\resources\com\example\demo\dao\" />
+      <recent name="C:\Users\zuiwu\IdeaProjects\workspace_idea_03\demo\src\main\resources\com\example\demo\dao" />
       <recent name="I:\my\workspace_idea_03\maven-parent\ssm-dao\src\main\java" />
       <recent name="I:\my\workspace_idea_03\maven-ssm\src\main\webapp\WEB-INF\pages\jsp" />
       <recent name="I:\my\workspace_idea_03\maven-ssm\src\main\webapp\WEB-INF\pages\thymeleaf" />
-      <recent name="I:\my\workspace_idea_03\maven-ssm\src\main\webapp\WEB-INF\pages" />
-      <recent name="I:\my\workspace_idea_03\maven-ssm\src\main\webapp\WEB-INF\pages2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xf.maven_ssm.domain.response" />
@@ -531,7 +551,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.DemoApplicationTests.contextLoads4">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -928,7 +948,8 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\zuiwu\AppData\Roaming\Subversion</configuration>
+    <option name="sshPrivateKeyPath" value="C:\Users\zuiwu\.ssh\github_id_rsa" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1004,7 +1025,7 @@
       <workItem from="1663042755809" duration="20995000" />
       <workItem from="1663076894113" duration="17834000" />
       <workItem from="1663487809666" duration="8938000" />
-      <workItem from="1663902637674" duration="6585000" />
+      <workItem from="1663902637674" duration="23897000" />
     </task>
     <task id="LOCAL-00001" summary="webapi接口开发">
       <created>1559011221205</created>
@@ -1069,7 +1090,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663930118292</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="spring boot demo:mybatis-generator生成LocalDateTime">
+      <created>1663930310093</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663930310093</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1381,7 +1409,8 @@
     <MESSAGE value="spring boot demo" />
     <MESSAGE value="spring boot demo:集成mybatis" />
     <MESSAGE value="spring boot demo:配置FastJsonHttpMessageConverter" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring boot demo:配置FastJsonHttpMessageConverter" />
+    <MESSAGE value="spring boot demo:mybatis-generator生成LocalDateTime" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring boot demo:mybatis-generator生成LocalDateTime" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1390,6 +1419,11 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/org/springframework/web/servlet/DispatcherServlet.class</url>
           <line>663</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

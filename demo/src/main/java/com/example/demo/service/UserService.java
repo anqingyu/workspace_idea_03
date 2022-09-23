@@ -46,4 +46,6 @@ public interface UserService {
      * @return
      */
     List<User> findByNameLikeIgnoreCase(String name);
+
+    String login(String userLogin, String userPass);
 }

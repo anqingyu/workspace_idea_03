@@ -19,9 +19,10 @@ import java.util.List;
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
+    // 配置FastJsonHttpMessageConverter
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        converters.add(fastJsonHttpMessageConverter());
+        converters.add(0, fastJsonHttpMessageConverter());
     }
 
     @Bean

@@ -64,7 +64,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version>
+            <version>1.1.21</version>
         </dependency>
 
         <!-- lombok依赖 -->
@@ -114,6 +114,26 @@
             <artifactId>thymeleaf-extras-springsecurity5</artifactId>
         </dependency>
         -->
+
+        <!-- hibernate-validator不生效，可能是依赖版本冲突了，手动添加依赖 Hibernate Validator:  start  -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.2.4.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+        <!-- hibernate-validator不生效，可能是依赖版本冲突了，手动添加依赖 Hibernate Validator:  end  -->
+
+        <!-- hutool依赖 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.7.20</version>
+        </dependency>
     </dependencies>
 
     <build>
