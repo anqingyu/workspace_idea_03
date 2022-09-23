@@ -629,6 +629,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.alibaba:fastjson:1.2.54">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.alibaba:fastjson:1.2.83">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.83/fastjson-1.2.83.jar!/" />
@@ -2266,6 +2277,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.7/mybatis-spring-2.0.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mybatis:mybatis-typehandlers-jsr310:1.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-typehandlers-jsr310/1.0.2/mybatis-typehandlers-jsr310-1.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-typehandlers-jsr310/1.0.2/mybatis-typehandlers-jsr310-1.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-typehandlers-jsr310/1.0.2/mybatis-typehandlers-jsr310-1.0.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.mybatis:mybatis:3.5.6">

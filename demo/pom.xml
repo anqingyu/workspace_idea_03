@@ -43,6 +43,12 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.2.2</version>
         </dependency>
+        <!-- 一旦mybatis中使用了java8中的日期类型，记得要在项目中引入mybatis-typehandlers-jsr310,这个主要是处理java8中的日期类型 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-typehandlers-jsr310</artifactId>
+            <version>1.0.2</version>
+        </dependency>
         <!--spring-boot-starter-jdbc是springboot提供的，但是如果引入了mybatis-spring-boot-starter，就不再需要单独引入spring-boot-starter-jdbc了，这是由于mybatis已经包含了此依赖-->
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
@@ -79,6 +85,13 @@
             <groupId>com.github.shijingsh</groupId>
             <artifactId>knife4j-spring-boot-starter</artifactId>
             <version>3.0.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.54</version>
         </dependency>
 
         <!-- 待集成 -->

@@ -28,6 +28,9 @@
                 false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer
                 true，把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal-->
             <property name="forceBigDecimals" value="true"/>
+            <!-- This property is used to specify whether MyBatis Generator should force the use of JSR-310 data types for DATE, TIME,
+                        and TIMESTAMP fields, rather than using java.util.Date:即生成LocalDateTime类型日期 -->
+            <property name="useJSR310Types" value="true"/>
         </javaTypeResolver>
 
         <!-- 生成实体类地址 -->
