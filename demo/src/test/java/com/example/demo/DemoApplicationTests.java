@@ -5,8 +5,6 @@ import com.example.demo.domain.Items;
 import com.example.demo.domain.User;
 import com.example.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import net.minidev.json.JSONAware;
-import net.minidev.json.JSONObject;
 import net.minidev.json.JSONValue;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
