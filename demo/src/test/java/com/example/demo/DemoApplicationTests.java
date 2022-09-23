@@ -1,8 +1,13 @@
 package com.example.demo;
 
+import com.example.demo.dao.ItemsMapper;
+import com.example.demo.domain.Items;
 import com.example.demo.domain.User;
 import com.example.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import net.minidev.json.JSONAware;
+import net.minidev.json.JSONObject;
+import net.minidev.json.JSONValue;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +31,8 @@ class DemoApplicationTests {
     private JdbcTemplate jdbcTemplate;
     @Autowired
     UserService userService;
+    @Autowired
+    ItemsMapper itemsMapper;
 
     @Test
     void contextLoads() {
@@ -68,6 +75,13 @@ class DemoApplicationTests {
         log.info("模糊查询{}",userService.findByNameLikeIgnoreCase("沉默%"));
         // 删除
         userService.delete(4);
+    }
+
+    @Test
+    void contextLoads4() {
+        Items items = itemsMapper.selectByPrimaryKey(1);
+        String s = JSONValue.toJSONString(items);
+        System.out.println(s);
     }
 
 }

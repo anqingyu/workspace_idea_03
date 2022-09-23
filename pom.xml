@@ -11,13 +11,13 @@
     <modules>
         <module>socket-server</module>
         <module>socket-client</module>
-        <module>jdk8</module>
         <module>netty-server</module>
         <module>netty-client</module>
         <module>maven-ssm</module>
         <module>maven-parent</module>
         <module>foundation</module>
         <module>algorithm</module>
+        <module>untitled</module>
     </modules>
 
     <dependencies>

@@ -36,5 +36,4 @@ spring:
 
 # mybatis配置
 mybatis:
-  mapper-locations: classpath:mybatis/mapper/*.xml
-  type-aliases-package: com.example.demo.dao.pojo
+  mapper-locations: classpath:com/example/demo/mapper/*.xml  #放在 resources 目录下不会被  MyBatis 自动扫描到，所以需要在 application.yml 配置文件中告诉 MyBatis 具体的扫描路径

@@ -37,6 +37,7 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- mybatis依赖 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -50,7 +51,8 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <!-- 如果配置了下方属性，mybatis-generator-maven-plugin运行时会找不到com.mysql.cj.jdbc.driver，不使用插件时可打开scope -->
+            <!--<scope>runtime</scope>-->
         </dependency>
         <!-- Druid 是阿里巴巴开源的一款数据库连接池，结合了C3P0、DBCP 等 DB 池的优点，同时还加入了日志监控 -->
         <dependency>
@@ -106,6 +108,21 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- MyBatis Generator 插件 -->
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.3.7</version>
+                <configuration>
+                    <!-- MyBatis Generator 生成器的配置文件-->
+                    <configurationFile>src/main/resources/mybatis-generator-config.xml</configurationFile>
+                    <!-- 允许覆盖生成的文件，确定骨架代码后就可以设为 false 了，免得覆盖原有代码 -->
+                    <overwrite>true</overwrite>
+                    <!-- 将当前 pom 的依赖项添加到生成器的类路径中-->
+                    <includeCompileDependencies>true</includeCompileDependencies>
+                </configuration>
             </plugin>
         </plugins>
     </build>
