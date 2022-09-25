@@ -9,26 +9,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114e5569-5516-4489-b6ad-0b86be1a9661" name="Default" comment="spring boot demo:mybatis-generator生成LocalDateTime">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/BindingResultAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebLogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/Asserts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/IErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/common/ResultObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/domain/request/UsersLoginParam.java" afterDir="false" />
+    <list default="true" id="114e5569-5516-4489-b6ad-0b86be1a9661" name="Default" comment="spring boot demo:validator 校验">
       <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/api/UserControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/api/UserControllerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/demo/mapper/ItemsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/demo/dao/ItemsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket-client/src/main/java/com/xf/study/socket/client/test001/SocketClientTest001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket-server/src/main/java/com/xf/study/socket/server/test001/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket-server/src/main/java/com/xf/study/socket/server/test001/SocketServerTest001.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/socket.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/socket.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket.iws" beforeDir="false" afterPath="$PROJECT_DIR$/socket.iws" afterDir="false" />
     </list>
@@ -929,12 +917,12 @@
       <item itemvalue="JUnit.DemoApplicationTests" />
       <item itemvalue="JUnit.DemoApplicationTests.contextLoads3" />
       <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.DemoApplicationTests.contextLoads4" />
       <item itemvalue="Spring Boot.SpringbootdemoApplication" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.Demo2Application" />
       <item itemvalue="Tomcat Server.maven_ssm" />
       <item itemvalue="Tomcat Server.ssm-web" />
-      <item itemvalue="JUnit.DemoApplicationTests.contextLoads4" />
     </list>
     <recent_temporary>
       <list>
@@ -1025,7 +1013,8 @@
       <workItem from="1663042755809" duration="20995000" />
       <workItem from="1663076894113" duration="17834000" />
       <workItem from="1663487809666" duration="8938000" />
-      <workItem from="1663902637674" duration="23897000" />
+      <workItem from="1663902637674" duration="29016000" />
+      <workItem from="1664082181538" duration="2163000" />
     </task>
     <task id="LOCAL-00001" summary="webapi接口开发">
       <created>1559011221205</created>
@@ -1097,7 +1086,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663930310093</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="spring boot demo:validator 校验">
+      <created>1663969437026</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663969437026</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1410,7 +1406,8 @@
     <MESSAGE value="spring boot demo:集成mybatis" />
     <MESSAGE value="spring boot demo:配置FastJsonHttpMessageConverter" />
     <MESSAGE value="spring boot demo:mybatis-generator生成LocalDateTime" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring boot demo:mybatis-generator生成LocalDateTime" />
+    <MESSAGE value="spring boot demo:validator 校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring boot demo:validator 校验" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

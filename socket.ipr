@@ -228,10 +228,8 @@
         <module name="demo" />
         <module name="netty-server" />
         <module name="ssm-web" />
-        <module name="socket-server" />
         <module name="springbootdemo" />
         <module name="maven-ssm" />
-        <module name="socket-client" />
         <module name="algorithm" />
       </profile>
     </annotationProcessing>
@@ -476,8 +474,6 @@
       <module fileurl="file://$PROJECT_DIR$/netty-client/netty-client.iml" filepath="$PROJECT_DIR$/netty-client/netty-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-server/netty-server.iml" filepath="$PROJECT_DIR$/netty-server/netty-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/socket.iml" filepath="$PROJECT_DIR$/socket.iml" />
-      <module fileurl="file://$PROJECT_DIR$/socket-client/socket-client.iml" filepath="$PROJECT_DIR$/socket-client/socket-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/socket-server/socket-server.iml" filepath="$PROJECT_DIR$/socket-server/socket-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootdemo/springbootdemo.iml" filepath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-parent/ssm-dao/ssm-dao.iml" filepath="$PROJECT_DIR$/maven-parent/ssm-dao/ssm-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-parent/ssm-service/ssm-service.iml" filepath="$PROJECT_DIR$/maven-parent/ssm-service/ssm-service.iml" />
@@ -1531,17 +1527,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.10.6/joda-time-2.10.6-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: junit:junit:4.13.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.1/junit-4.13.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.1/junit-4.13.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.1/junit-4.13.1-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: log4j:log4j:1.2.17">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
@@ -1991,17 +1976,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/2.3.6/txw2-2.3.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hamcrest:hamcrest-core:1.3">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hamcrest:hamcrest:2.2">
