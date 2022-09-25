@@ -72,6 +72,18 @@
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.5.3</version>
         </dependency>
+        <!-- mybatis-plus代码生成器需要一个模板引擎，velocity和freemarker任选一个，velocity是生成器中默认使用的，根据选择引依赖 -->
+        <!--velocity模板-->
+        <!--<dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.3</version>
+        </dependency>-->
+        <!--freemarker模板-->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
 
         <!-- 引入log4j2依赖 -->
         <dependency>
