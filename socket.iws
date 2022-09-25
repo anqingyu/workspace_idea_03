@@ -9,21 +9,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114e5569-5516-4489-b6ad-0b86be1a9661" name="Default" comment="删除不必要的文件">
-      <change afterPath="$PROJECT_DIR$/mp-springboot/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/src/main/java/com/example/mp/MpSpringbootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/src/main/java/com/example/mp/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/src/main/java/com/example/mp/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp-springboot/src/test/java/com/example/mp/MpSpringbootApplicationTests.java" afterDir="false" />
+    <list default="true" id="114e5569-5516-4489-b6ad-0b86be1a9661" name="Default" comment="Mybatis Plus demo">
+      <change afterPath="$PROJECT_DIR$/mp-springboot/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp-springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp-springboot/src/main/java/com/example/mp/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mp-springboot/src/main/java/com/example/mp/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mp-springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp-springboot/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mp-springboot/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp-springboot/src/test/java/com/example/mp/MpSpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mp-springboot/src/test/java/com/example/mp/MpSpringbootApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/socket.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket.iws" beforeDir="false" afterPath="$PROJECT_DIR$/socket.iws" afterDir="false" />
     </list>
@@ -573,56 +565,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoApplicationTests.contextLoads3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplicationTests.contextLoads4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -651,6 +593,57 @@
       <option name="PACKAGE_NAME" value="com.example.mp" />
       <option name="MAIN_CLASS_NAME" value="com.example.mp.MpSpringbootApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MpSpringbootApplicationTests.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mp.MpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testDeleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MpSpringbootApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mp.MpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MpSpringbootApplicationTests.testUpdateById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mp.MpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testUpdateById" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -927,9 +920,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.Cardioid" />
-      <item itemvalue="JUnit.DemoApplicationTests" />
-      <item itemvalue="JUnit.DemoApplicationTests.contextLoads3" />
-      <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
       <item itemvalue="JUnit.DemoApplicationTests.contextLoads4" />
       <item itemvalue="Spring Boot.SpringbootdemoApplication" />
       <item itemvalue="Spring Boot.DemoApplication" />
@@ -938,14 +928,17 @@
       <item itemvalue="Tomcat Server.ssm-web" />
       <item itemvalue="Spring Boot.MpSpringbootApplication" />
       <item itemvalue="JUnit.MpSpringbootApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.MpSpringbootApplicationTests.testInsert" />
+      <item itemvalue="JUnit.MpSpringbootApplicationTests.testUpdateById" />
+      <item itemvalue="JUnit.MpSpringbootApplicationTests.testDeleteById" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MpSpringbootApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MpSpringbootApplicationTests.testUpdateById" />
+        <item itemvalue="JUnit.MpSpringbootApplicationTests.testDeleteById" />
+        <item itemvalue="JUnit.MpSpringbootApplicationTests.testInsert" />
         <item itemvalue="JUnit.DemoApplicationTests.contextLoads4" />
-        <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.DemoApplicationTests.contextLoads3" />
-        <item itemvalue="JUnit.DemoApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -1029,7 +1022,7 @@
       <workItem from="1663076894113" duration="17834000" />
       <workItem from="1663487809666" duration="8938000" />
       <workItem from="1663902637674" duration="29016000" />
-      <workItem from="1664082181538" duration="6501000" />
+      <workItem from="1664082181538" duration="15414000" />
     </task>
     <task id="LOCAL-00001" summary="webapi接口开发">
       <created>1559011221205</created>
@@ -1115,7 +1108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664084398337</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Mybatis Plus demo">
+      <created>1664089054373</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664089054373</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1430,7 +1430,8 @@
     <MESSAGE value="spring boot demo:mybatis-generator生成LocalDateTime" />
     <MESSAGE value="spring boot demo:validator 校验" />
     <MESSAGE value="删除不必要的文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除不必要的文件" />
+    <MESSAGE value="Mybatis Plus demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mybatis Plus demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1444,11 +1445,6 @@
           <url>file://$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java</url>
           <line>54</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mp-springboot/src/test/java/com/example/mp/MpSpringbootApplicationTests.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

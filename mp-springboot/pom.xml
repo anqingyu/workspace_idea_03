@@ -20,10 +20,24 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <exclusions>
+            <!--springboot默认是logback日志框架, 需先排除此依赖, 否则会和log4j2产生jar包冲突-->
+            <!--但是这种排除方式不一定有效，因为可能别的依赖包里也集成了默认的日志，这样的话项目启动依旧会报冲突-->
+            <!--<exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>-->
+        </dependency>
+
+        <!-- 全局排除spring-boot-starter-logging相关所有依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -51,9 +65,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 引入log4j2依赖 -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <version>2.7.4</version>
         </dependency>
     </dependencies>
 

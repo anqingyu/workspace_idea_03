@@ -598,17 +598,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: ch.qos.reload4j:reload4j:1.2.19">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/reload4j/reload4j/1.2.19/reload4j-1.2.19.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/reload4j/reload4j/1.2.19/reload4j-1.2.19-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/reload4j/reload4j/1.2.19/reload4j-1.2.19-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: cn.hutool:hutool-all:4.1.14">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.1.14/hutool-all-4.1.14.jar!/" />
@@ -1830,6 +1819,39 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.apache.logging.log4j:log4j-core:2.17.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.logging.log4j:log4j-jul:2.17.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-jul/2.17.2/log4j-jul-2.17.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-jul/2.17.2/log4j-jul-2.17.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-jul/2.17.2/log4j-jul-2.17.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.17.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-slf4j-impl/2.17.2/log4j-slf4j-impl-2.17.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-slf4j-impl/2.17.2/log4j-slf4j-impl-2.17.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-slf4j-impl/2.17.2/log4j-slf4j-impl-2.17.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.17.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar!/" />
@@ -2644,17 +2666,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.slf4j:slf4j-reload4j:1.7.36">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-reload4j/1.7.36/slf4j-reload4j-1.7.36.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-reload4j/1.7.36/slf4j-reload4j-1.7.36-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-reload4j/1.7.36/slf4j-reload4j-1.7.36-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: org.slf4j:slf4j-simple:1.7.36">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar!/" />
@@ -2754,6 +2765,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-json/2.7.3/spring-boot-starter-json-2.7.3-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-log4j2:2.7.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-log4j2/2.7.4/spring-boot-starter-log4j2-2.7.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-log4j2/2.7.4/spring-boot-starter-log4j2-2.7.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-log4j2/2.7.4/spring-boot-starter-log4j2-2.7.4-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework.boot:spring-boot-starter-logging:2.7.3">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.7.3/spring-boot-starter-logging-2.7.3.jar!/" />
@@ -2763,6 +2785,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.7.3/spring-boot-starter-logging-2.7.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-logging:2.7.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.7.4/spring-boot-starter-logging-2.7.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.7.4/spring-boot-starter-logging-2.7.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.7.4/spring-boot-starter-logging-2.7.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.boot:spring-boot-starter-test:2.7.3">

@@ -22,4 +22,6 @@ public class User {
     private String name;
     @TableField("AGE")
     private Integer age;
+    @TableField("EMAIL")
+    private String email;
 }
