@@ -1,5 +1,6 @@
 package com.example.mp.pojo;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -12,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @TableName("tb_user")
 public class User {
-    @TableId("ID")
+    @TableId(value = "ID", type = IdType.AUTO)
     private Long id;
     @TableField("USER_NAME")
     private String userName; // 驼峰命名,则无需注解
